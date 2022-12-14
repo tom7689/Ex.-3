@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Ex.-3" />
+        <module name="GameOfLife" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Ex.-3" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
