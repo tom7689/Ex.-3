@@ -15,7 +15,7 @@ public class Species
 	 * @param n Name
 	 * @param p PatternString
 	 */
-	public Species(String n, String p, int sizeX, int sizeY)
+	public Species(String n, String d, String p, int sizeX, int sizeY)
 	{
 		name = n;
 		x = sizeX;
