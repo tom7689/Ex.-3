@@ -38,10 +38,10 @@ public class Controller {
         playerList.add(new Player(Color.blue));
         activePlayer = playerList.get(0);
         PreLoader pre = new PreLoader(this);
-        pre.loadPreset(5, 8, "Glider");
+        pre.loadPreset(9, 8, "Glider");
         activePlayer = playerList.get(1);
         PreLoader pre2 = new PreLoader(this);
-        pre2.loadPreset(12, 8, "Glider");
+        pre2.loadPreset(18, 8, "Glider");
         setPlayer1Name(gameOfLifeGUI.getPlayer1Name());
         setPlayer2Name(gameOfLifeGUI.getPlayer2Name());
         playerList.sort(Player.nameComparator);
