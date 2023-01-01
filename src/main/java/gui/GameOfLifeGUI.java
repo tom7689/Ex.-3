@@ -105,12 +105,12 @@ public class GameOfLifeGUI {
         JLabel player11 = new JLabel("Player 1");
         panel1.add(player11, BorderLayout.WEST);
         String player1Name = JOptionPane.showInputDialog("Red Player enter your name");
-        player1.setText(player1Name);
+        player1.setText(player1Name+(" (Red)"));
 
         Panel panel2 = new Panel();
         JLabel player22 = new JLabel("Player 2");
         panel2.add(player22, BorderLayout.WEST);
         String player2Name = JOptionPane.showInputDialog("Blue Player enter your name");
-        player2.setText(player2Name);
+        player2.setText(player2Name+" (Blue)");
     }
 }
