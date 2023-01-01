@@ -5,26 +5,23 @@ package library;
  */
 public class Species 
 {
-	private String name;
-	private String description;
-	private boolean pattern[][];
-	private int x;
-	private int y;
+	private final String name;
+	private final boolean[][] pattern;
+	private final int x;
+	private final int y;
 
 	/**
 	 * A Species is a special Pattern on the Grid which has unique behaviours
 	 * @param n Name
-	 * @param d Description
 	 * @param p PatternString
 	 */
-	public Species(String n, String d, String p, int sizeX, int sizeY)
+	public Species(String n, String p, int sizeX, int sizeY)
 	{
 		name = n;
-		description = d;
 		x = sizeX;
 		y = sizeY;
 		
-		String lines[] = p.split("\\$");
+		String[] lines = p.split("\\$");
 		
 		pattern = new boolean[y][x];
 		
@@ -62,15 +59,6 @@ public class Species
 	}
 
 	/**
-	 * returns the description
-	 * @return
-	 */
-	public String getDescription()
-	{
-		return description;
-	}
-
-	/**
 	 * pattern as boolean array
 	 * @return pattern-array
 	 */
@@ -82,12 +70,10 @@ public class Species
 
 	/**
 	 * helper method for converting the GOL pattern into a boolean array
-	 * @param line
-	 * @return
 	 */
 	private boolean[] convertLine(String line)
 	{
-		boolean convertedLine[];
+		boolean[] convertedLine;
 		convertedLine = new boolean[x];
 		
 		int prefix = 0;
@@ -111,7 +97,7 @@ public class Species
 			}
 			else
 			{
-				prefix = prefix * 10 + (int)(line.charAt(i) - '0');
+				prefix = prefix * 10 + (line.charAt(i) - '0');
 			}
 		}
 		
