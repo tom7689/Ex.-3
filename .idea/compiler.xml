@@ -6,16 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-<<<<<<< HEAD
-        <module name="GameOfLife" />
-      </profile>
-    </annotationProcessing>
-=======
+        <module name="Ex.-3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="src" target="19" />
+      <module name="Ex.-3" target="19" />
     </bytecodeTargetLevel>
->>>>>>> f2d2ca8 (j)
   </component>
 </project>
